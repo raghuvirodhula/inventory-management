@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '再発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -125,7 +126,46 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
+    },
+    submitted: {
+      title: '送信済みオーダー',
+      empty: '送信済みの再発注はまだありません。',
+      days: '{count}日'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '再発注',
+    description: '予算を設定すると、需要予測に基づいて再発注すべき品目を推奨します。',
+    budget: {
+      label: '利用可能予算',
+      committed: '使用予定',
+      remaining: '残り',
+      itemsSelected: '{total}件中{selected}件を選択中'
+    },
+    table: {
+      include: '含める',
+      sku: 'SKU',
+      itemName: '品目名',
+      currentDemand: '現在',
+      forecastedDemand: '予測',
+      gap: '数量',
+      unitCost: '単価',
+      lineCost: '合計',
+      leadTime: 'リードタイム',
+      days: '{count}日'
+    },
+    placeOrder: '発注する',
+    submitting: '送信中...',
+    success: '発注しました。注文タブの送信済みオーダーで確認できます。',
+    error: '発注に失敗しました。もう一度お試しください。',
+    empty: {
+      noBudget: '予算を設定すると推奨品目が表示されます。',
+      allMet: 'すべての品目が予測需要を満たしています — 再発注の必要はありません。',
+      noneFit: '現在の予算で発注できる品目はありません。予算を増やすか、選択を確認してください。'
     }
   },
 
@@ -204,6 +244,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '送信済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'

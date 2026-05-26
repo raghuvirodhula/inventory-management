@@ -60,6 +60,9 @@ npm install && npm run dev
 4. Inventory filters don't support month (no time dimension)
 5. Revenue goals: $800K/month single, $9.6M YTD all months
 
+## Code Style
+- **Always document non-obvious logic changes with a comment** explaining the *why* (hidden constraints, workarounds, invariants, ordering dependencies). One concise sentence is enough. Skip comments that only restate what the code does.
+
 ## File Locations
 - Views: `client/src/views/*.vue`
 - API Client: `client/src/api.js`
